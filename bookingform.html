@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title><link rel="stylesheet" href="style.css">
+<script defer src="javascript.js"></script>
+</head>
+<body>
+<section id="countdown" class="countdown-section">
+    
+<section class="countdown-section">
+    <h1>Countdown to Our Event</h1>
+
+    <div class="countdown">
+
+        <div class="time-box">
+            <span id="day">00</span>
+            <small>Days</small>
+        </div>
+
+        <div class="time-box">
+            <span id="hours">00</span>
+            <small>Hours</small>
+        </div>
+
+        <div class="time-box">
+            <span id="minutes">00</span>
+            <small>Minutes</small>
+        </div>
+
+        <div class="time-box">
+            <span id="seconds">00</span>
+            <small>Seconds</small>
+        </div>
+
+    </div>
+
+</section>
+</section>
+
+
+</section>
+
+
+    <!--================ PRICE PACKAGES =================-->
+
+<section class="booking-package-section">
+
+    <div class="booking-package-container">
+
+        <div class="booking-package-title">
+
+            <h5>OUR PACKAGES</h5>
+
+            <h2>Select Your Event Package</h2>
+
+            <p>Choose the package that best suits your event and budget.</p>
+
+        </div>
+
+        <div class="booking-package-grid">
+
+            <!-- Silver -->
+
+            <div class="booking-package-card">
+
+                <h3>Silver</h3>
+
+                <h1>₦250,000</h1>
+
+                <ul>
+
+                    <li>✔ Event Planning</li>
+
+                    <li>✔ Basic Decoration</li>
+
+                    <li>✔ Venue Coordination</li>
+
+                    <li>✔ Event Supervisor</li>
+
+                </ul>
+
+                <button class="booking-package-btn"
+                data-package="Silver"
+                data-price="₦250,000">
+
+                    Choose Package
+
+                </button>
+
+            </div>
+
+            <!-- Gold -->
+
+            <div class="booking-package-card featured">
+
+                <span class="booking-package-badge">
+
+                    MOST POPULAR
+
+                </span>
+
+                <h3>Gold</h3>
+
+                <h1>₦500,000</h1>
+
+                <ul>
+
+                    <li>✔ Everything in Silver</li>
+
+                    <li>✔ Premium Decoration</li>
+
+                    <li>✔ Photography</li>
+
+                    <li>✔ Event Coordination</li>
+
+                    <li>✔ DJ & Sound</li>
+
+                </ul>
+
+                <button class="booking-package-btn"
+                data-package="Gold"
+                data-price="₦500,000">
+
+                    Choose Package
+
+                </button>
+
+            </div>
+
+            <!-- Platinum -->
+
+            <div class="booking-package-card">
+
+                <h3>Platinum</h3>
+
+                <h1>₦1,000,000</h1>
+
+                <ul>
+
+                    <li>✔ Complete Event Planning</li>
+
+                    <li>✔ Luxury Decoration</li>
+
+                    <li>✔ Photography & Video</li>
+
+                    <li>✔ Live Streaming</li>
+
+                    <li>✔ VIP Coordination</li>
+
+                    <li>✔ Full Event Management</li>
+
+                </ul>
+
+                <button class="booking-package-btn"
+                data-package="Platinum"
+                data-price="₦1,000,000">
+
+                    Choose Package
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+    <!-- ================= BOOKING SECTION ================= -->
+
+<section id="booking" class="booking-section">
+
+    <div class="booking-container">
+
+        <!-- Section Title -->
+        <div class="booking-title">
+
+            <h4>Book an Event</h4>
+
+            <h2>Let's Plan Your Next Event</h2>
+
+            <p>
+                Fill out the form below and our team will contact you shortly.
+            </p>
+
+        </div>
+
+        <!-- Booking Form -->
+        <form class="booking-form" id="bookingForm">
+
+            <div class="booking-row">
+
+                <div class="booking-input">
+                    <label>Full Name</label>
+                    <input type="text" id="fullname" placeholder="Enter your full name">
+                </div>
+
+                <div class="booking-input">
+                    <label>Email Address</label>
+                    <input type="email" id="email" placeholder="Enter your email">
+                </div>
+
+            </div>
+
+            <div class="booking-row">
+
+                <div class="booking-input">
+                    <label>Phone Number</label>
+                    <input type="tel" id="phone" placeholder="Enter your phone number">
+                </div>
+
+                <div class="booking-input">
+                    <label>Event Date</label>
+                    <input type="date" id="date">
+                </div>
+
+            </div>
+
+            <div class="booking-row">
+
+                <div class="booking-input">
+                    <label>Event Type</label>
+
+                    <select id="eventType">
+
+                        <option value="">Choose Event</option>
+
+                        <option>Wedding</option>
+
+                        <option>Birthday</option>
+
+                        <option>Corporate Event</option>
+
+                        <option>Concert</option>
+
+                        <option>Cultural Festival</option>
+
+                        <option>Private Party</option>
+
+                    </select>
+
+                </div>
+
+                <div class="booking-input">
+                    <label>Expected Guests</label>
+                    <input type="number" id="guests" placeholder="Number of guests">
+                </div>
+
+            </div>
+
+            <div class="booking-input">
+
+                <label>Additional Information</label>
+
+                <textarea id="message"
+                placeholder="Tell us about your event..."
+                rows="6"></textarea>
+
+            </div>
+
+            <button type="submit" class="booking-btn">
+
+                Submit Booking
+
+            </button>
+
+        </form>
+
+    </div>
+
+
+
+<!-- ================= END BOOKING ================= --
+</body>
+</html>
