@@ -52,13 +52,13 @@ const sideMenu = document.getElementById("sideMenu");
 
 const closeBtn = document.getElementById("closeBtn");
 
-hamburger.addEventListener("click", function(){
+hamburger.addEventListener("click", () => {
 
     sideMenu.classList.add("active");
 
 });
 
-closeBtn.addEventListener("click", function(){
+closeBtn.addEventListener("click", () => {
 
     sideMenu.classList.remove("active");
 
