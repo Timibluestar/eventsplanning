@@ -81,14 +81,14 @@ box-sizing:border-box;
     width:30px;
     height:3px;
     background:#000;
-    margin:4px 0;
+    margin-right:4px 0;
     transition:.4s;
 
 }
 
 /* SIDE MENU */
 
-.side-menu{
+.mobile-Menu{
 
     position:fixed;
     top:0;
@@ -100,15 +100,16 @@ box-sizing:border-box;
     transition:.4s;
     z-index:9999;
 
-}
-
-.side-menu.active{
-
-    right:0;
 
 }
 
-.side-menu a{
+.mobile-Menu.active{
+
+    right:25px;
+
+}
+
+.mobile-Menu a{
 
     display:block;
     color:#fff;
@@ -118,7 +119,7 @@ box-sizing:border-box;
 
 }
 
-.side-menu a:hover{
+.mobile-Menu a:hover{
 
     background:#0055aa;
 

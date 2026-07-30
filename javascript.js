@@ -58,7 +58,7 @@ closeBtn.addEventListener("click", function () {
     mobileMenu.classList.remove("active");
 });
 
-window.addEventListener("click", function(e){
+mobileMenu.addEventListener("click", function(e){
 
     if(
         e.target !== mobileMenu &&
@@ -554,6 +554,8 @@ function revealElements(){
 window.addEventListener("scroll", revealElements);
 
 window.addEventListener("load", revealElements);
+mobileMenu.addEventListener("scroll", revealElements);
+mobileMenu.addEventListener("load", revealElements);
 
 
 //================ PACKAGE SELECTION ================
