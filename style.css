@@ -5,156 +5,108 @@ box-sizing:border-box;
 }
 /* HEADER */
 
-.header{
 
-    background:#fff;
+
+/* Header */
+
+.header{
     display:flex;
     justify-content:space-between;
     align-items:center;
-    padding:15px 20px;
-    
-
+    padding:15px 25px;
+    background:#fff;
+    position:fixed;
+    width:100%;
+    top:0;
+    left:0;
+    z-index:1000;
 }
 
-/* LOGO */
-
 .logo{
-
     display:flex;
     align-items:center;
-
+    gap:10px;
 }
 
 .logo img{
-
-    width:60px;
-    height:60px;
-    border-radius:50%;
-    object-fit:cover;
-
+    width:55px;
 }
 
-.logo h2{
-
-    color:#003366;
-    font-size:24px;
-
-}
-
-/* DESKTOP MENU */
+/* Desktop Menu */
 
 .navbar ul{
-
     display:flex;
     list-style:none;
-    gap:35px;
-
+    gap:25px;
 }
 
-.navbar ul li a{
-
+.navbar a{
     text-decoration:none;
-    color:#222;
-    font-weight:600;
-    transition:.3s;
-
+    color:#003366;
+    font-weight:bold;
 }
 
-.navbar ul li a:hover{
-
-    color:#0077ff;
-
-}
-
-/* HAMBURGER */
+/* Hamburger */
 
 .hamburger{
-
-    display:flex;
-    flex-direction:column;
+    display:none;
+    font-size:35px;
     cursor:pointer;
-
+    color:#003366;
 }
 
-.hamburger span{
+/* Mobile Menu */
 
-    width:30px;
-    height:3px;
-    background:#000;
-    margin-right:4px 0;
-    transition:.4s;
-
-}
-
-/* SIDE MENU */
-
-.mobile-Menu{
-
+.mobile-menu{
     position:fixed;
     top:0;
-    right:-300px;
+    right:-280px;
     width:280px;
     height:100%;
     background:#003366;
-    padding-top:80px;
-    transition:.4s;
+    transition:0.4s;
+    padding-top:70px;
     z-index:9999;
-
-
 }
 
-.mobile-Menu.active{
-
-    right:25px;
-
+.mobile-menu.active{
+    right:0;
 }
 
-.mobile-Menu a{
-
+.mobile-menu a{
     display:block;
     color:#fff;
     text-decoration:none;
+    padding:18px 30px;
     font-size:20px;
-    padding:18px 35px;
-
 }
 
-.mobile-Menu a:hover{
-
-    background:#0055aa;
-
+.mobile-menu a:hover{
+    background:#0b5ed7;
 }
 
-.close-btn{
-
+.close{
     position:absolute;
     top:15px;
-    right:25px;
-    font-size:40px;
+    right:20px;
+    font-size:35px;
     color:white;
     cursor:pointer;
-
 }
 
-/* RESPONSIVE */
+/* Mobile */
 
-@media(max-width:991px){
+@media(max-width:768px){
 
-.navbar{
+    .navbar{
+        display:none;
+    }
 
-display:none;
-
-}
-
-.hamburger{
-
-display:flex;
+    .hamburger{
+        display:block;
+    }
 
 }
-
-}
-
-
 
 /*================ HERO SLIDER ================*/
 

@@ -28,24 +28,6 @@ setInterval(showHeroSlide,5000);
 
 //================ HEADER SCROLL =================
 
-const header = document.querySelector(".header");
-
-window.addEventListener("scroll",()=>{
-
-    if(window.scrollY > 80){
-
-        header.classList.add("scrolled");
-
-    }
-
-    else{
-
-        header.classList.remove("scrolled");
-
-    }
-
-});
-
 const hamburger = document.getElementById("hamburger");
 const mobileMenu = document.getElementById("mobileMenu");
 const closeBtn = document.getElementById("closeBtn");
@@ -56,21 +38,6 @@ hamburger.addEventListener("click", function () {
 
 closeBtn.addEventListener("click", function () {
     mobileMenu.classList.remove("active");
-});
-
-window.addEventListener("click", function(e){
-
-    if(
-        e.target !== mobileMenu &&
-        e.target !== hamburger &&
-        !hamburger.contains(e.target) &&
-        !mobileMenu.contains(e.target)
-    ){
-
-        mobileMenu.classList.add("active");
-
-    }
-
 });
 // ===============================
 // Testimonial Slider
