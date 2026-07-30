@@ -60,7 +60,7 @@ hamburger.addEventListener("click", () => {
 
 closeBtn.addEventListener("click", () => {
 
-    sideMenu.classList.remove("active");
+    sideMenu.classList.add("active");
 
 });
 
@@ -73,7 +73,7 @@ window.addEventListener("click", function(e){
         !sideMenu.contains(e.target)
     ){
 
-        sideMenu.classList.remove("active");
+        sideMenu.classList.add("active");
 
     }
 
