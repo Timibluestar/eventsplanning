@@ -47,33 +47,27 @@ window.addEventListener("scroll",()=>{
 });
 
 const hamburger = document.getElementById("hamburger");
-
-const sideMenu = document.getElementById("sideMenu");
-
+const mobileMenu = document.getElementById("mobileMenu");
 const closeBtn = document.getElementById("closeBtn");
 
-hamburger.addEventListener("click", () => {
-
-    sideMenu.classList.add("active");
-
+hamburger.addEventListener("click", function () {
+    mobileMenu.classList.add("active");
 });
 
-closeBtn.addEventListener("click", () => {
-
-    sideMenu.classList.add("active");
-
+closeBtn.addEventListener("click", function () {
+    mobileMenu.classList.remove("active");
 });
 
 window.addEventListener("click", function(e){
 
     if(
-        e.target !== sideMenu &&
+        e.target !== mobileMenu &&
         e.target !== hamburger &&
         !hamburger.contains(e.target) &&
-        !sideMenu.contains(e.target)
+        !mobileMenu.contains(e.target)
     ){
 
-        sideMenu.classList.add("active");
+        mobileMenu.classList.add("active");
 
     }
 
