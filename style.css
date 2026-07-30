@@ -57,7 +57,7 @@ box-sizing:border-box;
 
 }
 
-.nav-links{
+.navbar{
 
     display:flex;
 
@@ -67,7 +67,7 @@ box-sizing:border-box;
 
 }
 
-.nav-links li a{
+.navbar a{
 
     color:white;
 
@@ -83,7 +83,7 @@ box-sizing:border-box;
 
 /* Underline Animation */
 
-.nav-links li a::after{
+.navbar a::after{
 
     content:"";
 
@@ -103,13 +103,13 @@ box-sizing:border-box;
 
 }
 
-.nav-links li a:hover::after{
+.navbar a:hover::after{
 
     width:100%;
 
 }
 
-.nav-links li a.active::after{
+.navbar a.active::after{
 
     width:100%;
 
