@@ -46,14 +46,38 @@ window.addEventListener("scroll",()=>{
 
 });
 
-const menuToggle = document.getElementById("menu-toggle");
-const navbar = document.getElementById("navbar");
+const hamburger = document.getElementById("hamburger");
 
-menuToggle.addEventListener("click", () => {
-    menuToggle.classList.toggle("active");
-    navbar.classList.toggle("active");
+const sideMenu = document.getElementById("sideMenu");
+
+const closeBtn = document.getElementById("closeBtn");
+
+hamburger.addEventListener("click", function(){
+
+    sideMenu.classList.add("active");
+
 });
 
+closeBtn.addEventListener("click", function(){
+
+    sideMenu.classList.remove("active");
+
+});
+
+window.addEventListener("click", function(e){
+
+    if(
+        e.target !== sideMenu &&
+        e.target !== hamburger &&
+        !hamburger.contains(e.target) &&
+        !sideMenu.contains(e.target)
+    ){
+
+        sideMenu.classList.remove("active");
+
+    }
+
+});
 // ===============================
 // Testimonial Slider
 // ===============================
