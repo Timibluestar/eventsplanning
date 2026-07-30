@@ -58,7 +58,7 @@ closeBtn.addEventListener("click", function () {
     mobileMenu.classList.remove("active");
 });
 
-mobileMenu.addEventListener("click", function(e){
+window.addEventListener("click", function(e){
 
     if(
         e.target !== mobileMenu &&
